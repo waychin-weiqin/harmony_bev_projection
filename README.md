@@ -7,7 +7,7 @@ homographies.
 ## Installation
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/waychin-weiqin/harmony_bev_projection.git
 cd bev_projection
 pip install .
 ```
@@ -75,21 +75,6 @@ Results are written to `outputs/` by default.
 --homography FILE    Homography JSON (default: data/image_bev_homographies_analytical.json)
 --bev FILE          BEV image (default: data/drone_bev_aligned.png)
 --output-dir DIR    Output directory (default: outputs/)
-```
-
----
-
-## Camera positions on the BEV
-
-`data/bev_cameras.png` shows the optical centre of each camera projected onto
-the BEV. Cameras inside the BEV footprint are drawn directly on the image;
-cameras outside (they sit at the scene perimeter) appear on an expanded dark
-border with dashed leader lines to their nearest BEV edge.
-
-To regenerate it:
-
-```bash
-python annotate_cameras.py
 ```
 
 ---
