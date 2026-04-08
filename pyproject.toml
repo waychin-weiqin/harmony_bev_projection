@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bev-projection"
+version = "0.1.0"
+description = "Project camera detections onto a Bird's Eye View image using analytical homographies"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+dependencies = [
+    "opencv-python>=4.5",
+    "numpy>=1.21",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["lib*"]
+
+[tool.setuptools.package-data]
+"lib" = []
